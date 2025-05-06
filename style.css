@@ -12,6 +12,24 @@
     --fText: 'Courier New', monospace;
     --sAside: 180px;
     --cSelectedBg: whitesmoke;
+    --cPre: whitesmoke;
+}
+/*Inspired by: https://github.com/GitSquared/edex-ui/blob/master/media/screenshot_horizon.png*/
+.horizon {
+    --cTableHeader: #dbaf92;
+    --cBorder: #dadada;
+    --cTextHeader: #3F4C51;
+    --cText: #bdbfbd;
+    --cBackground: #24252f;
+    --cLightBackground: #292a31;
+    --cWhite: #dadada;
+    --cLightGrey: #C0C0C0;
+    --cGrey: #828E8E;
+    --cDarkGrey: #5E696A;
+    --fText: 'Courier New', monospace;
+    --sAside: 180px;
+    --cSelectedBg: #dbaf92;
+    --cPre: #dadada;
 }
 
 body {
@@ -85,7 +103,7 @@ th {
 }
 
 .cardContent {
-    border: 1px solid var(--cText);
+    border: 1px solid var(--cBorder);
     background-color: var(--cBackground);
 
     padding: 10px;
@@ -156,7 +174,7 @@ select {
 }
 
 pre {
-    background-color: white;
+    background-color: var(--cPre);
     color: var(--cBackground);
     font-size: medium;
     box-shadow: 5px 5px var(--cDarkGrey);
