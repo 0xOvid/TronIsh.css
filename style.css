@@ -11,6 +11,7 @@
     --cDarkGrey: #5E696A;
     --fText: 'Courier New', monospace;
     --sAside: 180px;
+    --cSelectedBg: whitesmoke;
 }
 
 body {
@@ -210,4 +211,14 @@ aside {
 a {
     text-decoration: none !important;
     color: var(--cGrey);
+}
+
+tr.selected {
+    background-color: var(--cSelectedBg);
+    color: var(--cBackground);
+}
+
+li.selected {
+    background-color: var(--cSelectedBg);
+    color: var(--cBackground);
 }
