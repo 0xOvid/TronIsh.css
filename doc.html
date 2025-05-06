@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+
+<head>
+    <link  rel="stylesheet" type="text/css"  href="./style.css">
+</head>
+
+<body>
+    <aside>
+        <ul style="display: block;
+            list-style: none;
+            padding-left: 20px;">
+            <li><a href="#intro">Intro</a></li>
+            <li><a href="#colors">Colors</a></li>
+            <li>
+                <details open>
+                    <summary><a href="#components">Components</a></summary>
+                    <ul class="tree">
+                        <li>Grid</li>
+                        <li>Card</li>
+                        <li>pre</li>
+                        <li>Button</li>
+                        <li>TextBox</li>
+                        <li>Form</li>
+                        <li>Tree</li>
+                        <li>Table</li>
+                    </ul>
+                </details>
+            </li>
+            <li>Issues</li>
+        </ul>
+    </aside>
+
+    <div class="container">
+        <h1>TronIsh.css</h1>
+        <p>
+            A design system for creating cool futuristis lookung UIs.
+        </p>
+        <br>
+
+        <h2 id="intro">Intro</h2>
+        <p>
+            TronIsh.css is a CSS libray to style web GUIs,
+            The library is meant to make it easy to quickly create good looking webinterfaces for my various projects.
+        </p>
+        <br>
+
+        <h2 id="colors">Colors</h2>
+        <p>
+            Below is a table containing the various colours used in the project, along with their respective color codes
+            for easy reference.
+        </p>
+        <table>
+            <tr>
+                <td style="
+            height: 25px;
+            width: 25px;
+            background-color: var(--cBackground)"></td>
+                <td>--cBackground (#0F1015)</td>
+            </tr>
+            <tr>
+                <td style="
+            height: 25px;
+            width: 25px;
+            background-color: var(--cTextHeader)"></td>
+                <td>--cTextHeader (#3F4C51)</td>
+            </tr>
+            <tr>
+                <td style="
+            height: 25px;
+            width: 25px;
+            background-color: var(--cTableHeader)"></td>
+                <td>--cTableHeader (hsl(186, 13%, 46%))</td>
+            </tr>
+            <tr>
+                <td style="
+            height: 25px;
+            width: 25px;
+            background-color: var(--cBorder)"></td>
+                <td>--cBorder, --cText (#A2D1D1)</td>
+            </tr>
+            <tr>
+                <td style="
+            height: 25px;
+            width: 25px;
+            background-color: var(--cWhite)"></td>
+                <td>--cWhite (#C0C0C0)</td>
+            </tr>
+            <tr>
+                <td style="
+            height: 25px;
+            width: 25px;
+            background-color: var(--cLightGrey)"></td>
+                <td>--cLightGrey (#C0C0C0)</td>
+            </tr>
+            <tr>
+                <td style="
+            height: 25px;
+            width: 25px;
+            background-color: var(--cGrey)"></td>
+                <td>--cGrey (#828E8E)</td>
+            </tr>
+            <tr>
+                <td style="
+            height: 25px;
+            width: 25px;
+            background-color: var(--cDarkGrey)"></td>
+                <td>--cDarkGrey (#5E696A)</td>
+            </tr>
+        </table>
+        <br>
+
+        <h2 id="components">Components</h2>
+        <h3 id="grid">Grid</h3>
+        <p>The "grid" element is meant for an easy way of arranging the contents in several columns and acts as
+            a single
+            row in the page.</p>
+        <p>Below is an example using the "grid" together with a single "card".</p>
+        <div class="grid">
+            <div class="card">
+                <div class="cardHeaderSelected">HEADER SELECTED</div>
+                <div class="cardBorder">
+                    <div class="cardContent">
+                        <table>
+                            <thead>
+                                <th>one</th>
+                                <th>two</th>
+                                <th>three</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1bla</td>
+                                    <td>ajweoowierno</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        some arbitrary text that is very cool and nice!!
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p>Code:</p>
+        <pre>
+
+<span><</span>div class="grid">
+    <span><</span>div class="card">  
+        card contents.
+    <span><</span>/div>
+<span><</span>/div>
+    </pre>
+        <br>
+        <p>The following is a single grid with two cards.</p>
+        <div class="grid">
+            <div class="card">
+                <div class="cardHeader">HEADER</div>
+                <div class="cardBorder">
+                    <div class="cardContent">
+                        <table>
+                            <thead>
+                                <th>one</th>
+                                <th>two</th>
+                                <th>three</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1bla</td>
+                                    <td>ajweoowierno</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        some arbitrary text that is very cool and nice!!
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="cardHeader">HEADER</div>
+                <div class="cardBorder">
+                    <div class="cardContent">
+                        <table>
+                            <thead>
+                                <th>one</th>
+                                <th>two</th>
+                                <th>three</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1bla</td>
+                                    <td>ajweoowierno</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                                <tr>
+                                    <td>1</td>
+                                    <td>1</td>
+                                    <td>1</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        some arbitrary text that is very cool and nice!!
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <p>Code:</p>
+        <pre>
+
+<span><</span>div class="grid">
+    <span><</span>div class="card">  
+        card contents.
+    <span><</span>/div>
+    <span><</span>div class="card">  
+        card contents.
+    <span><</span>/div>
+<span><</span>/div>
+    </pre>
+
+        <br>
+
+        <h3 id="card">Card</h3>
+        <p>
+            The "card" element allows you to create "boxes" with various content. Each of which acts like a
+            column in a
+            row, the row being the "grid element".
+            Furthermore to get the full experince the following elements also need to be placed in order:
+            cardHeader, cardBorder, and cardContent.
+        </p>
+
+        <div class="card">
+            <div class="cardHeader">HEADER</div>
+            <div class="cardBorder">
+                <div class="cardContent">
+                    Cool contents
+                </div>
+            </div>
+        </div>
+        <p>Code:</p>
+        <pre>
+
+<span><</span>div class="card">
+    <span><</span>div class="cardHeader">HEADER<span><</span>/div>
+    <span><</span>div class="cardBorder">
+    <span><</span>div class="cardContent">
+        Cool contents
+    <span><</span>/div>
+<span><</span>/div>
+    </pre>
+
+        <p>Cards can also be "selected", highlighting the header element.</p>
+
+
+        <div class="card">
+            <div class="cardHeaderSelected">SELECTED HEADER</div>
+            <div class="cardBorder">
+                <div class="cardContent">
+                    Cool contents
+                </div>
+            </div>
+        </div>
+        <p>Code:</p>
+        <pre>
+
+<span><</span>div class="card">
+    <span><</span>div class="cardHeaderSelected">SELECTED HEADER<span><</span>/div>
+    <span><</span>div class="cardBorder">
+    <span><</span>div class="cardContent">
+        Cool contents
+    <span><</span>/div>
+<span><</span>/div>
+        </pre>
+        <br>
+
+        <h3 id="pre">pre</h3>
+        <p>Standard pre element</p>
+        <p>Code:</p>
+        <pre>
+
+<span><</span>pre> Fancy code example. <span><</span>/pre>
+        </pre>
+        <br>
+
+        <h3 id="button">Button</h3>
+        <p>Standard button. Needs animation for when clicked.</p>
+        <button>Button</button>
+        <p>Code:</p>
+        <pre>
+
+<span><</span>button>Button<span><</span>/button>
+        </pre>
+        <br>
+
+        <h3>TextBox</h3>
+        <p>Standard element for handeling user text input.</p>
+        <input>
+        <p>Code:</p>
+        <pre>
+
+<span><</span>input>
+        </pre>
+        <br>
+
+        <h3 id="form">Form</h3>
+        <p>Standard element for handeling forms and different input types</p>
+        <form>
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+            </select>
+            <input type="submit" value="Submit">
+        </form>
+        <br>
+
+        <h3>Tree</h3>
+        <p>Standard tree view for displaying layers of nested lists.</p>
+        <ul style="display: block;
+        list-style: none;
+        padding-left: 20px;">
+        <li>toplayer</li>
+        <li>toplayer</li>
+        <li>
+            <details open>
+                <summary>toplayer  w. nested</summary>
+                <ul class="tree">
+                    <li>t0</li>
+                    <li>t1</li>
+                </ul>
+            </details>
+        </li>
+        <li>toplayer</li>
+    </ul>
+        <br>
+
+        <h3>Table</h3>
+        <p>Standard element for handeling tables.</p>
+        <table>
+            <thead>
+                <th>one</th>
+                <th>two</th>
+                <th>three</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1bla</td>
+                    <td>ajweoowierno</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>1</td>
+                    <td>1</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
